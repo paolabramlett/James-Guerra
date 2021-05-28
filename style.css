@@ -1,0 +1,441 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: #004389;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+nav .mainMenu li a:hover {
+    background: #155EAD;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {color:  #1877F2;}
+.fa-instagram:hover {color: #ED4956;}
+.fa-linkedin:hover {color: #0966C2;}
+.fa-youtube:hover {color: #FF0100;}
+
+nav .logo img {
+    margin: 10px;
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+@media(max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #004389;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: #B9C7D8;
+        font-size: 1.2rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+
+.hero-image {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(portada-02.png) no-repeat center;
+    background-size: cover;
+}
+
+.hero-image2 {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(portada-03.png) no-repeat center;
+    background-size: cover;
+}
+
+.hero-image3 {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(portada-04.png) no-repeat center;
+    background-size: cover;
+}
+
+.hero-image4 {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(portada-01.png) no-repeat center;
+    background-size: cover;
+}
+
+.container1 {
+    position: absolute;
+    left: 2%;
+    bottom: 30%;
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.container1 h1 {
+    font-size: 72px;
+    font-weight: 800;
+}
+
+.container1 h1 span {
+
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.des {
+    margin: 20px;
+    display: block;
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.btn {
+    color: #313131;
+    padding: 10px 24px;
+    font-size: 20px;
+    text-decoration: none;
+    background: #f1f1f1;
+    border-radius: 8px;
+    transition: 0.3s all;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.knowledge {
+    padding: 200px 10px;
+    text-align: center;
+    background: #F2E2C5;
+    color: #155EAD;
+}
+
+.container2 {
+    margin: 20px;
+}
+
+.container3 {
+    margin: 100px 100px;
+}
+
+.container {
+    padding: 30px 50px;
+    text-align: justify;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 800;
+    color: #004389;
+    padding-bottom: 30px;
+}
+
+.index-img {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: url(portada-01.png) no-repeat center;
+    background-size: cover;
+}
+
+.container-about {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.img-about {
+    width: 38%;
+}
+
+.container-text {
+    width: 38%;
+}
+
+.container-text h3 {
+    margin-bottom: 15px;
+    font-size: 21px;
+    text-align: left;
+}
+
+.container-text h3 span {
+    background: #132457;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.container-text p {
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+.card-real-estate {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-real-estate .card-text {
+    margin-top: 30px;
+    background: #155EAD;
+    display: flex;
+    width: 48%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+
+}
+
+.card-real-estate > .card-text {
+    color: #fff;
+    width: 60%;
+    padding: 10px;
+}
+
+.card-real-estate .card-text h3 {
+    padding-right: 15px;
+}
+
+.card-real-estate img {
+    display: flex;
+    width: 48%;
+    width: 300px;
+    height: 300px;
+}
+
+.card-real-estate h3 {
+    font-weight: 800;
+}
+
+.container-real-estate {
+    padding: 30px 60px;
+    background-color: #cacaca;
+}
+
+.container-real-estate p {
+    text-align: justify;
+    color: #004389;
+    padding: 5px;
+
+}
+
+.container-real-estate a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.container-taxes {
+    background-color: #004389;
+}
+
+.container-taxes .container-taxes-text {
+    padding: 50px 80px;
+    color: #fff;
+}
+
+.container-taxes .container-taxes-text p {
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.container-taxes .container-taxes-text h1 {
+    text-align: center;
+    color: #93bcee;
+    font-weight: 800;
+    font-size: 46px;
+}
+
+.container-taxes .container-taxes-text h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 26px;
+
+}
+
+.container-taxes .container-taxes-text h4 {
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 18px;
+}
+
+.container-taxes-2 {
+    background-color: #cacaca;
+}
+
+.container-taxes-2 .container-taxes-text-2 h1 {
+    text-align: center;
+    color: #155EAD;
+    font-weight: 800;
+    font-size: 46px;
+}
+.container-taxes-2 .container-taxes-text-2 h2 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 26px;
+
+}
+
+.container-taxes-2 .container-taxes-text-2 p {
+    text-align: justify;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.container-taxes-2 .container-taxes-text-2 {
+    padding: 50px 80px;
+    color: rgb(20, 39, 59);
+}
+
+
+
+
+
+footer {
+    padding: 80px 10px;
+    font-size: 9px;
+    text-align: center;
+    background: rgb(145, 156, 170);
+    color: white;
+}
+
+.title-cards h1 {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 800;
+    color: #155EAD;
+    padding-top: 30px;
+}
+
+.container-info {
+    padding: 30px 50px;
+}
+
+.button-book {
+    padding: 30px 50px;
+    
+}
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+  
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: relative;
+    bottom: 0;
+    top: -7px;
+    background: #004389;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    
+    
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #B9C7D8;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
